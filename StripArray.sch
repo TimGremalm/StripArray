@@ -1,0 +1,422 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Driver_LED:WS2811 U1
+U 1 1 5FD4BF80
+P 3850 4350
+F 0 "U1" H 3850 4800 50  0000 C CNN
+F 1 "WS2811" H 3850 4700 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 3550 4500 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 3650 4600 50  0001 C CNN
+	1    3850 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FD5469B
+P 3650 3650
+F 0 "C?" H 3765 3696 50  0000 L CNN
+F 1 "100nF" H 3765 3605 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3688 3500 50  0001 C CNN
+F 3 "~" H 3650 3650 50  0001 C CNN
+	1    3650 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FD55116
+P 3050 5000
+F 0 "R?" V 2843 5000 50  0000 C CNN
+F 1 "33R" V 2934 5000 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" V 2980 5000 50  0001 C CNN
+F 3 "~" H 3050 5000 50  0001 C CNN
+	1    3050 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FD56217
+P 3650 3350
+F 0 "R?" H 3720 3396 50  0000 L CNN
+F 1 "8k2" H 3720 3305 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" V 3580 3350 50  0001 C CNN
+F 3 "~" H 3650 3350 50  0001 C CNN
+	1    3650 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FD5A287
+P 3650 3800
+F 0 "#PWR?" H 3650 3550 50  0001 C CNN
+F 1 "GND" H 3655 3627 50  0000 C CNN
+F 2 "" H 3650 3800 50  0001 C CNN
+F 3 "" H 3650 3800 50  0001 C CNN
+	1    3650 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR?
+U 1 1 5FD5AA90
+P 3650 3250
+F 0 "#PWR?" H 3650 3100 50  0001 C CNN
+F 1 "VDD" H 3667 3423 50  0000 C CNN
+F 2 "" H 3650 3250 50  0001 C CNN
+F 3 "" H 3650 3250 50  0001 C CNN
+	1    3650 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L IRLML6344:IRLML6344 Q?
+U 1 1 5FD55DEE
+P 4750 4350
+F 0 "Q?" H 4954 4396 50  0000 L CNN
+F 1 "IRLML6344" H 4954 4305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4950 4260 50  0001 L CIN
+F 3 "http://www.farnell.com/datasheets/1911844.pdf" H 4750 4350 50  0001 L CNN
+F 4 "IRLML6344TRPbF" H 5270 4160 50  0001 C CNN "Orderable part number"
+F 5 "30V" H 5030 4060 50  0001 C CNN "VDS"
+F 6 "±12V" H 5230 4060 50  0001 C CNN "VGS Max"
+F 7 "29mΩ @VGS4.5V / 37mΩ @VGS2.5V" H 5650 3970 50  0001 C CNN "RDSON Max"
+	1    4750 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FD57973
+P 4550 4000
+F 0 "R?" H 4620 4046 50  0000 L CNN
+F 1 "10k" H 4620 3955 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" V 4480 4000 50  0001 C CNN
+F 3 "~" H 4550 4000 50  0001 C CNN
+	1    4550 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FD58C7A
+P 4400 4350
+F 0 "R?" V 4193 4350 50  0000 C CNN
+F 1 "1k" V 4284 4350 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" V 4330 4350 50  0001 C CNN
+F 3 "~" H 4400 4350 50  0001 C CNN
+	1    4400 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5FD5A78B
+P 3300 3850
+F 0 "JP?" V 3200 3700 50  0000 L CNN
+F 1 "Set_Low_Speed_400kHz" H 3300 3750 50  0000 L CNN
+F 2 "" H 3300 3850 50  0001 C CNN
+F 3 "~" H 3300 3850 50  0001 C CNN
+	1    3300 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3650 3200 3650 3250
+$Comp
+L power:GND #PWR?
+U 1 1 5FD61FB9
+P 3850 4700
+F 0 "#PWR?" H 3850 4450 50  0001 C CNN
+F 1 "GND" H 3855 4527 50  0000 C CNN
+F 2 "" H 3850 4700 50  0001 C CNN
+F 3 "" H 3850 4700 50  0001 C CNN
+	1    3850 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FD56061
+P 3600 5200
+F 0 "R?" V 3393 5200 50  0000 C CNN
+F 1 "33R" V 3484 5200 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" V 3530 5200 50  0001 C CNN
+F 3 "~" H 3600 5200 50  0001 C CNN
+	1    3600 5200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 4450 3450 4450
+Wire Wire Line
+	3200 5000 3350 5000
+Wire Wire Line
+	3350 5000 3350 4250
+Wire Wire Line
+	3350 4250 3450 4250
+Wire Wire Line
+	3450 4350 3450 4450
+Connection ~ 3450 4450
+Wire Wire Line
+	3850 4650 3850 4700
+$Comp
+L power:GND #PWR?
+U 1 1 5FD6DA14
+P 4850 4550
+F 0 "#PWR?" H 4850 4300 50  0001 C CNN
+F 1 "GND" H 4850 4400 50  0000 C CNN
+F 2 "" H 4850 4550 50  0001 C CNN
+F 3 "" H 4850 4550 50  0001 C CNN
+	1    4850 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FD6EAFE
+P 4850 4000
+F 0 "R?" H 4920 4046 50  0000 L CNN
+F 1 "10k" H 4920 3955 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" V 4780 4000 50  0001 C CNN
+F 3 "~" H 4850 4000 50  0001 C CNN
+	1    4850 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L IRLML6344:IRLML6344 Q?
+U 1 1 5FD78CD8
+P 5050 4150
+F 0 "Q?" H 5254 4196 50  0000 L CNN
+F 1 "IRLML6344" H 5254 4105 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5250 4060 50  0001 L CIN
+F 3 "http://www.farnell.com/datasheets/1911844.pdf" H 5050 4150 50  0001 L CNN
+F 4 "IRLML6344TRPbF" H 5570 3960 50  0001 C CNN "Orderable part number"
+F 5 "30V" H 5330 3860 50  0001 C CNN "VDS"
+F 6 "±12V" H 5530 3860 50  0001 C CNN "VGS Max"
+F 7 "29mΩ @VGS4.5V / 37mΩ @VGS2.5V" H 5950 3770 50  0001 C CNN "RDSON Max"
+	1    5050 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3850 4550 3850
+Connection ~ 4850 4150
+Wire Wire Line
+	5150 4350 5150 4550
+Wire Wire Line
+	5150 4550 4850 4550
+Connection ~ 4850 4550
+Wire Wire Line
+	3450 4450 3450 5200
+Wire Wire Line
+	4550 4350 4550 4150
+$Comp
+L IRLML6344:IRLML6344 Q?
+U 1 1 5FDD940D
+P 4750 3450
+F 0 "Q?" H 4954 3496 50  0000 L CNN
+F 1 "IRLML6344" H 4954 3405 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4950 3360 50  0001 L CIN
+F 3 "http://www.farnell.com/datasheets/1911844.pdf" H 4750 3450 50  0001 L CNN
+F 4 "IRLML6344TRPbF" H 5270 3260 50  0001 C CNN "Orderable part number"
+F 5 "30V" H 5030 3160 50  0001 C CNN "VDS"
+F 6 "±12V" H 5230 3160 50  0001 C CNN "VGS Max"
+F 7 "29mΩ @VGS4.5V / 37mΩ @VGS2.5V" H 5650 3070 50  0001 C CNN "RDSON Max"
+	1    4750 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FDD9413
+P 4550 3100
+F 0 "R?" H 4620 3146 50  0000 L CNN
+F 1 "10k" H 4620 3055 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" V 4480 3100 50  0001 C CNN
+F 3 "~" H 4550 3100 50  0001 C CNN
+	1    4550 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FDD9419
+P 4400 3450
+F 0 "R?" V 4193 3450 50  0000 C CNN
+F 1 "1k" V 4284 3450 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" V 4330 3450 50  0001 C CNN
+F 3 "~" H 4400 3450 50  0001 C CNN
+	1    4400 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FDD941F
+P 4850 3650
+F 0 "#PWR?" H 4850 3400 50  0001 C CNN
+F 1 "GND" H 4850 3500 50  0000 C CNN
+F 2 "" H 4850 3650 50  0001 C CNN
+F 3 "" H 4850 3650 50  0001 C CNN
+	1    4850 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FDD9425
+P 4850 3100
+F 0 "R?" H 4920 3146 50  0000 L CNN
+F 1 "10k" H 4920 3055 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" V 4780 3100 50  0001 C CNN
+F 3 "~" H 4850 3100 50  0001 C CNN
+	1    4850 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L IRLML6344:IRLML6344 Q?
+U 1 1 5FDD942F
+P 5050 3250
+F 0 "Q?" H 5254 3296 50  0000 L CNN
+F 1 "IRLML6344" H 5254 3205 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5250 3160 50  0001 L CIN
+F 3 "http://www.farnell.com/datasheets/1911844.pdf" H 5050 3250 50  0001 L CNN
+F 4 "IRLML6344TRPbF" H 5570 3060 50  0001 C CNN "Orderable part number"
+F 5 "30V" H 5330 2960 50  0001 C CNN "VDS"
+F 6 "±12V" H 5530 2960 50  0001 C CNN "VGS Max"
+F 7 "29mΩ @VGS4.5V / 37mΩ @VGS2.5V" H 5950 2870 50  0001 C CNN "RDSON Max"
+	1    5050 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2950 4550 2950
+Connection ~ 4850 3250
+Wire Wire Line
+	5150 3450 5150 3650
+Wire Wire Line
+	5150 3650 4850 3650
+Connection ~ 4850 3650
+Connection ~ 4550 3450
+Wire Wire Line
+	4550 3450 4550 3250
+$Comp
+L IRLML6344:IRLML6344 Q?
+U 1 1 5FDE6E26
+P 4750 5300
+F 0 "Q?" H 4954 5346 50  0000 L CNN
+F 1 "IRLML6344" H 4954 5255 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4950 5210 50  0001 L CIN
+F 3 "http://www.farnell.com/datasheets/1911844.pdf" H 4750 5300 50  0001 L CNN
+F 4 "IRLML6344TRPbF" H 5270 5110 50  0001 C CNN "Orderable part number"
+F 5 "30V" H 5030 5010 50  0001 C CNN "VDS"
+F 6 "±12V" H 5230 5010 50  0001 C CNN "VGS Max"
+F 7 "29mΩ @VGS4.5V / 37mΩ @VGS2.5V" H 5650 4920 50  0001 C CNN "RDSON Max"
+	1    4750 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FDE6E2C
+P 4550 4950
+F 0 "R?" H 4620 4996 50  0000 L CNN
+F 1 "10k" H 4620 4905 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" V 4480 4950 50  0001 C CNN
+F 3 "~" H 4550 4950 50  0001 C CNN
+	1    4550 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FDE6E32
+P 4400 5300
+F 0 "R?" V 4193 5300 50  0000 C CNN
+F 1 "1k" V 4284 5300 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" V 4330 5300 50  0001 C CNN
+F 3 "~" H 4400 5300 50  0001 C CNN
+	1    4400 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FDE6E38
+P 4850 5500
+F 0 "#PWR?" H 4850 5250 50  0001 C CNN
+F 1 "GND" H 4850 5350 50  0000 C CNN
+F 2 "" H 4850 5500 50  0001 C CNN
+F 3 "" H 4850 5500 50  0001 C CNN
+	1    4850 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FDE6E3E
+P 4850 4950
+F 0 "R?" H 4920 4996 50  0000 L CNN
+F 1 "10k" H 4920 4905 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" V 4780 4950 50  0001 C CNN
+F 3 "~" H 4850 4950 50  0001 C CNN
+	1    4850 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L IRLML6344:IRLML6344 Q?
+U 1 1 5FDE6E48
+P 5050 5100
+F 0 "Q?" H 5254 5146 50  0000 L CNN
+F 1 "IRLML6344" H 5254 5055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5250 5010 50  0001 L CIN
+F 3 "http://www.farnell.com/datasheets/1911844.pdf" H 5050 5100 50  0001 L CNN
+F 4 "IRLML6344TRPbF" H 5570 4910 50  0001 C CNN "Orderable part number"
+F 5 "30V" H 5330 4810 50  0001 C CNN "VDS"
+F 6 "±12V" H 5530 4810 50  0001 C CNN "VGS Max"
+F 7 "29mΩ @VGS4.5V / 37mΩ @VGS2.5V" H 5950 4720 50  0001 C CNN "RDSON Max"
+	1    5050 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4800 4550 4800
+Connection ~ 4850 5100
+Wire Wire Line
+	5150 5300 5150 5500
+Wire Wire Line
+	5150 5500 4850 5500
+Connection ~ 4850 5500
+Connection ~ 4550 5300
+Wire Wire Line
+	4550 5300 4550 5100
+Connection ~ 4550 4350
+Wire Wire Line
+	3850 3500 3850 4050
+Wire Wire Line
+	4200 3500 4200 2950
+Wire Wire Line
+	4200 2950 4550 2950
+Connection ~ 4550 2950
+Wire Wire Line
+	4200 3500 4200 3850
+Wire Wire Line
+	4200 3850 4550 3850
+Connection ~ 4200 3500
+Connection ~ 4550 3850
+Wire Wire Line
+	4200 3850 4200 4800
+Wire Wire Line
+	4200 4800 4550 4800
+Connection ~ 4200 3850
+Connection ~ 4550 4800
+Wire Wire Line
+	4250 5300 4250 4450
+Wire Wire Line
+	4250 3450 4250 4250
+Wire Wire Line
+	3650 3500 3850 3500
+Wire Wire Line
+	3850 3500 4200 3500
+Connection ~ 3650 3500
+Connection ~ 3850 3500
+Wire Wire Line
+	3300 4000 3300 4450
+Wire Wire Line
+	3300 3700 3300 3500
+Wire Wire Line
+	3300 3500 3650 3500
+$EndSCHEMATC

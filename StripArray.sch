@@ -14,11 +14,15 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 1100 1300 1150 400 
+S 1000 1500 1500 1000
 U 60059F31
 F0 "AddressableLedDriver1" 50
 F1 "AddressableLedDriver.sch" 50
-F2 "DIN" I L 1100 1450 50 
-F3 "DOUT" I R 2250 1450 50 
+F2 "DIN" I L 1000 2000 50 
+F3 "DOUT" I R 2500 2000 50 
+F4 "VIn" I L 1000 1750 50 
+F5 "VOut" I R 2500 1750 50 
+F6 "GndIn" I L 1000 2250 50 
+F7 "GndOut" I R 2500 2250 50 
 $EndSheet
 $EndSCHEMATC

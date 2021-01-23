@@ -42,35 +42,6 @@ F 3 "~" H 2700 4300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R Rdo?
-U 1 1 6006C530
-P 2700 4700
-AR Path="/6006C530" Ref="Rdo?"  Part="1" 
-AR Path="/60059F31/6006C530" Ref="Rdo1"  Part="1" 
-AR Path="/601AD743/6006C530" Ref="Rdo2"  Part="1" 
-AR Path="/601B4EED/6006C530" Ref="Rdo3"  Part="1" 
-AR Path="/601B5265/6006C530" Ref="Rdo4"  Part="1" 
-AR Path="/601B55BF/6006C530" Ref="Rdo5"  Part="1" 
-AR Path="/601B5793/6006C530" Ref="Rdo6"  Part="1" 
-AR Path="/601B59D7/6006C530" Ref="Rdo7"  Part="1" 
-AR Path="/601B5B26/6006C530" Ref="Rdo8"  Part="1" 
-AR Path="/601B5F54/6006C530" Ref="Rdo9"  Part="1" 
-AR Path="/601B617C/6006C530" Ref="Rdo10"  Part="1" 
-AR Path="/601B6580/6006C530" Ref="Rdo11"  Part="1" 
-AR Path="/601B6B91/6006C530" Ref="Rdo12"  Part="1" 
-AR Path="/601B714E/6006C530" Ref="Rdo13"  Part="1" 
-AR Path="/601B73ED/6006C530" Ref="Rdo14"  Part="1" 
-AR Path="/601B7703/6006C530" Ref="Rdo15"  Part="1" 
-AR Path="/601B7A66/6006C530" Ref="Rdo16"  Part="1" 
-F 0 "Rdo1" V 2493 4700 50  0000 C CNN
-F 1 "33R" V 2584 4700 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" V 2630 4700 50  0001 C CNN
-F 3 "~" H 2700 4700 50  0001 C CNN
-	1    2700 4700
-	0    1    1    0   
-$EndComp
-NoConn ~ 3050 4500
-$Comp
 L Device:R Rredout?
 U 1 1 6006C537
 P 4800 3300
@@ -186,34 +157,6 @@ F 7 "29mΩ @VGS4.5V / 37mΩ @VGS2.5V" H 5600 3420 50  0001 C CNN "RDSON Max"
 	1    4700 3800
 	1    0    0    -1  
 $EndComp
-$Comp
-L Driver_LED:WS2811 U?
-U 1 1 6006C559
-P 3450 4400
-AR Path="/6006C559" Ref="U?"  Part="1" 
-AR Path="/60059F31/6006C559" Ref="U1"  Part="1" 
-AR Path="/601AD743/6006C559" Ref="U2"  Part="1" 
-AR Path="/601B4EED/6006C559" Ref="U3"  Part="1" 
-AR Path="/601B5265/6006C559" Ref="U4"  Part="1" 
-AR Path="/601B55BF/6006C559" Ref="U5"  Part="1" 
-AR Path="/601B5793/6006C559" Ref="U6"  Part="1" 
-AR Path="/601B59D7/6006C559" Ref="U7"  Part="1" 
-AR Path="/601B5B26/6006C559" Ref="U8"  Part="1" 
-AR Path="/601B5F54/6006C559" Ref="U9"  Part="1" 
-AR Path="/601B617C/6006C559" Ref="U10"  Part="1" 
-AR Path="/601B6580/6006C559" Ref="U11"  Part="1" 
-AR Path="/601B6B91/6006C559" Ref="U12"  Part="1" 
-AR Path="/601B714E/6006C559" Ref="U13"  Part="1" 
-AR Path="/601B73ED/6006C559" Ref="U14"  Part="1" 
-AR Path="/601B7703/6006C559" Ref="U15"  Part="1" 
-AR Path="/601B7A66/6006C559" Ref="U16"  Part="1" 
-F 0 "U1" H 3450 4850 50  0000 C CNN
-F 1 "WS2811" H 3450 4750 50  0000 C CNN
-F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 3150 4550 50  0001 C CNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 3250 4650 50  0001 C CNN
-	1    3450 4400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4250 3800 4250 3450
 Wire Wire Line
@@ -323,8 +266,8 @@ F 7 "29mΩ @VGS4.5V / 37mΩ @VGS2.5V" H 6150 3170 50  0001 C CNN "RDSON Max"
 	1    5250 3550
 	1    0    0    -1  
 $EndComp
-Text Notes 2700 2750 0    50   ~ 0
-WS2811 hava internal LDO with goal of 5.5V.\nWorldsemi recommends 2.7k in series with VDD to regulate current at 2.40mA.\n(24V-5.5V)/0.00240A = 7708 Ohm\nClosest E12 is 8.2k will put it at 2.25mA.
+Text Notes 2350 2150 0    50   ~ 0
+WS2811 hava internal LDO with goal of 5.5V.\nWorldsemi recommends 2.7k in series with VDD to regulate current at 2.40mA at 12V.\n(24V-5.5V)/2.40mA = 7.7 kOhm\nClosest E12 is 8.2k will put it at 2.25mA.
 $Comp
 L Device:R Rgreenout?
 U 1 1 6006C59C
@@ -883,8 +826,6 @@ Wire Wire Line
 Wire Wire Line
 	2500 4400 2500 4700
 Wire Wire Line
-	2500 4700 2550 4700
-Wire Wire Line
 	8850 4700 8850 4400
 Wire Wire Line
 	8850 4400 10450 4400
@@ -906,7 +847,7 @@ Connection ~ 10450 4400
 Wire Wire Line
 	10450 4400 10500 4400
 Wire Wire Line
-	3450 3100 2350 3100
+	3450 3100 2950 3100
 Connection ~ 3450 3100
 Connection ~ 2350 3100
 Wire Wire Line
@@ -931,15 +872,13 @@ AR Path="/601B714E/601B0CCE" Ref="#FLG011"  Part="1"
 AR Path="/601B73ED/601B0CCE" Ref="#FLG012"  Part="1" 
 AR Path="/601B7703/601B0CCE" Ref="#FLG013"  Part="1" 
 AR Path="/601B7A66/601B0CCE" Ref="#FLG014"  Part="1" 
-F 0 "#FLG014" H 3450 3175 50  0001 C CNN
+F 0 "#FLG0103" H 3450 3175 50  0001 C CNN
 F 1 "PWR_FLAG" H 3450 3273 50  0001 C CNN
 F 2 "" H 3450 3100 50  0001 C CNN
 F 3 "~" H 3450 3100 50  0001 C CNN
 	1    3450 3100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2850 4700 8850 4700
 $Comp
 L Mechanical:MountingHole Htopleft1
 U 1 1 600BA38D
@@ -1052,4 +991,74 @@ Text Notes 4850 4200 0    50   ~ 0
 Use a two stage MOSFET to invert signal.
 Text Notes 7200 1600 0    50   ~ 0
 Match footprint of RGB LED Strip
+Wire Wire Line
+	2500 4700 8850 4700
+Connection ~ 2950 3100
+Wire Wire Line
+	2950 3100 2350 3100
+$Comp
+L Driver_LED:WS2811 U?
+U 1 1 6006C559
+P 3450 4400
+AR Path="/6006C559" Ref="U?"  Part="1" 
+AR Path="/60059F31/6006C559" Ref="U1"  Part="1" 
+AR Path="/601AD743/6006C559" Ref="U2"  Part="1" 
+AR Path="/601B4EED/6006C559" Ref="U3"  Part="1" 
+AR Path="/601B5265/6006C559" Ref="U4"  Part="1" 
+AR Path="/601B55BF/6006C559" Ref="U5"  Part="1" 
+AR Path="/601B5793/6006C559" Ref="U6"  Part="1" 
+AR Path="/601B59D7/6006C559" Ref="U7"  Part="1" 
+AR Path="/601B5B26/6006C559" Ref="U8"  Part="1" 
+AR Path="/601B5F54/6006C559" Ref="U9"  Part="1" 
+AR Path="/601B617C/6006C559" Ref="U10"  Part="1" 
+AR Path="/601B6580/6006C559" Ref="U11"  Part="1" 
+AR Path="/601B6B91/6006C559" Ref="U12"  Part="1" 
+AR Path="/601B714E/6006C559" Ref="U13"  Part="1" 
+AR Path="/601B73ED/6006C559" Ref="U14"  Part="1" 
+AR Path="/601B7703/6006C559" Ref="U15"  Part="1" 
+AR Path="/601B7A66/6006C559" Ref="U16"  Part="1" 
+F 0 "U1" H 3450 4850 50  0000 C CNN
+F 1 "WS2811" H 3450 4750 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 3150 4550 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 3250 4650 50  0001 C CNN
+	1    3450 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 4500 3050 4500
+Wire Wire Line
+	2950 3200 2950 3100
+Wire Wire Line
+	2950 3500 2950 4500
+$Comp
+L Device:R Rredinv?
+U 1 1 600E943A
+P 2950 3350
+AR Path="/600E943A" Ref="Rredinv?"  Part="1" 
+AR Path="/60059F31/600E943A" Ref="Rset?"  Part="1" 
+AR Path="/601AD743/600E943A" Ref="Rredinv?"  Part="1" 
+AR Path="/601B4EED/600E943A" Ref="Rredinv?"  Part="1" 
+AR Path="/601B5265/600E943A" Ref="Rredinv?"  Part="1" 
+AR Path="/601B55BF/600E943A" Ref="Rredinv?"  Part="1" 
+AR Path="/601B5793/600E943A" Ref="Rredinv?"  Part="1" 
+AR Path="/601B59D7/600E943A" Ref="Rredinv?"  Part="1" 
+AR Path="/601B5B26/600E943A" Ref="Rredinv?"  Part="1" 
+AR Path="/601B5F54/600E943A" Ref="Rredinv?"  Part="1" 
+AR Path="/601B617C/600E943A" Ref="Rredinv?"  Part="1" 
+AR Path="/601B6580/600E943A" Ref="Rredinv?"  Part="1" 
+AR Path="/601B6B91/600E943A" Ref="Rredinv?"  Part="1" 
+AR Path="/601B714E/600E943A" Ref="Rredinv?"  Part="1" 
+AR Path="/601B73ED/600E943A" Ref="Rredinv?"  Part="1" 
+AR Path="/601B7703/600E943A" Ref="Rredinv?"  Part="1" 
+AR Path="/601B7A66/600E943A" Ref="Rredinv?"  Part="1" 
+F 0 "Rset?" H 3020 3396 50  0000 L CNN
+F 1 "0R" H 3020 3305 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" V 2880 3350 50  0001 C CNN
+F 3 "~" H 2950 3350 50  0001 C CNN
+F 4 "DNP" H 2950 3350 50  0001 C CNN "DNP"
+	1    2950 3350
+	1    0    0    -1  
+$EndComp
+Text Notes 2950 2950 0    50   ~ 0
+Set floating for high speed 800kHz mode.\nSet high for low speed mode 400kHz.
 $EndSCHEMATC

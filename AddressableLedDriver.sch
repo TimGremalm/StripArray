@@ -4,12 +4,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 17
-Title ""
-Date ""
-Rev ""
+Title "Strip Array - LED driver"
+Date "2021-01-23"
+Rev "2021-01-23"
 Comp ""
-Comment1 ""
-Comment2 ""
+Comment1 "WS2811 LED driver with external MOSFET's for RGB."
+Comment2 "https://github.com/TimGremalm/StripArray"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -323,8 +323,8 @@ F 7 "29mΩ @VGS4.5V / 37mΩ @VGS2.5V" H 6150 3170 50  0001 C CNN "RDSON Max"
 	1    5250 3550
 	1    0    0    -1  
 $EndComp
-Text Notes 2600 2450 0    50   ~ 0
-WS2811 VDD absolute maximum 6.0V
+Text Notes 2700 2750 0    50   ~ 0
+WS2811 hava internal LDO with goal of 5.5V.\nWorldsemi recommends 2.7k in series with VDD to regulate current at 2.40mA.\n(24V-5.5V)/0.00240A = 7708 Ohm\nClosest E12 is 8.2k will put it at 2.25mA.
 $Comp
 L Device:R Rgreenout?
 U 1 1 6006C59C
@@ -931,7 +931,7 @@ AR Path="/601B714E/601B0CCE" Ref="#FLG011"  Part="1"
 AR Path="/601B73ED/601B0CCE" Ref="#FLG012"  Part="1" 
 AR Path="/601B7703/601B0CCE" Ref="#FLG013"  Part="1" 
 AR Path="/601B7A66/601B0CCE" Ref="#FLG014"  Part="1" 
-F 0 "#FLG0103" H 3450 3175 50  0001 C CNN
+F 0 "#FLG014" H 3450 3175 50  0001 C CNN
 F 1 "PWR_FLAG" H 3450 3273 50  0001 C CNN
 F 2 "" H 3450 3100 50  0001 C CNN
 F 3 "~" H 3450 3100 50  0001 C CNN
@@ -940,4 +940,116 @@ F 3 "~" H 3450 3100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2850 4700 8850 4700
+$Comp
+L Mechanical:MountingHole Htopleft1
+U 1 1 600BA38D
+P 3800 6900
+AR Path="/60059F31/600BA38D" Ref="Htopleft1"  Part="1" 
+AR Path="/601AD743/600BA38D" Ref="Htopleft2"  Part="1" 
+AR Path="/601B6580/600BA38D" Ref="Htopleft11"  Part="1" 
+AR Path="/601B4EED/600BA38D" Ref="Htopleft3"  Part="1" 
+AR Path="/601B5265/600BA38D" Ref="Htopleft4"  Part="1" 
+AR Path="/601B55BF/600BA38D" Ref="Htopleft5"  Part="1" 
+AR Path="/601B5793/600BA38D" Ref="Htopleft6"  Part="1" 
+AR Path="/601B59D7/600BA38D" Ref="Htopleft7"  Part="1" 
+AR Path="/601B5B26/600BA38D" Ref="Htopleft8"  Part="1" 
+AR Path="/601B5F54/600BA38D" Ref="Htopleft9"  Part="1" 
+AR Path="/601B617C/600BA38D" Ref="Htopleft10"  Part="1" 
+AR Path="/601B6B91/600BA38D" Ref="Htopleft12"  Part="1" 
+AR Path="/601B714E/600BA38D" Ref="Htopleft13"  Part="1" 
+AR Path="/601B73ED/600BA38D" Ref="Htopleft14"  Part="1" 
+AR Path="/601B7703/600BA38D" Ref="Htopleft15"  Part="1" 
+AR Path="/601B7A66/600BA38D" Ref="Htopleft16"  Part="1" 
+F 0 "Htopleft1" H 3900 6946 50  0000 L CNN
+F 1 "MountingHole" H 3900 6855 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 3800 6900 50  0001 C CNN
+F 3 "~" H 3800 6900 50  0001 C CNN
+	1    3800 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole Htopright1
+U 1 1 600BDC42
+P 4550 6900
+AR Path="/60059F31/600BDC42" Ref="Htopright1"  Part="1" 
+AR Path="/601AD743/600BDC42" Ref="Htopright2"  Part="1" 
+AR Path="/601B6580/600BDC42" Ref="Htopright11"  Part="1" 
+AR Path="/601B4EED/600BDC42" Ref="Htopright3"  Part="1" 
+AR Path="/601B5265/600BDC42" Ref="Htopright4"  Part="1" 
+AR Path="/601B55BF/600BDC42" Ref="Htopright5"  Part="1" 
+AR Path="/601B5793/600BDC42" Ref="Htopright6"  Part="1" 
+AR Path="/601B59D7/600BDC42" Ref="Htopright7"  Part="1" 
+AR Path="/601B5B26/600BDC42" Ref="Htopright8"  Part="1" 
+AR Path="/601B5F54/600BDC42" Ref="Htopright9"  Part="1" 
+AR Path="/601B617C/600BDC42" Ref="Htopright10"  Part="1" 
+AR Path="/601B6B91/600BDC42" Ref="Htopright12"  Part="1" 
+AR Path="/601B714E/600BDC42" Ref="Htopright13"  Part="1" 
+AR Path="/601B73ED/600BDC42" Ref="Htopright14"  Part="1" 
+AR Path="/601B7703/600BDC42" Ref="Htopright15"  Part="1" 
+AR Path="/601B7A66/600BDC42" Ref="Htopright16"  Part="1" 
+F 0 "Htopright1" H 4650 6946 50  0000 L CNN
+F 1 "MountingHole" H 4650 6855 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 4550 6900 50  0001 C CNN
+F 3 "~" H 4550 6900 50  0001 C CNN
+	1    4550 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole Hbottomleft1
+U 1 1 600C04DB
+P 3800 7300
+AR Path="/60059F31/600C04DB" Ref="Hbottomleft1"  Part="1" 
+AR Path="/601AD743/600C04DB" Ref="Hbottomleft2"  Part="1" 
+AR Path="/601B6580/600C04DB" Ref="Hbottomleft11"  Part="1" 
+AR Path="/601B4EED/600C04DB" Ref="Hbottomleft3"  Part="1" 
+AR Path="/601B5265/600C04DB" Ref="Hbottomleft4"  Part="1" 
+AR Path="/601B55BF/600C04DB" Ref="Hbottomleft5"  Part="1" 
+AR Path="/601B5793/600C04DB" Ref="Hbottomleft6"  Part="1" 
+AR Path="/601B59D7/600C04DB" Ref="Hbottomleft7"  Part="1" 
+AR Path="/601B5B26/600C04DB" Ref="Hbottomleft8"  Part="1" 
+AR Path="/601B5F54/600C04DB" Ref="Hbottomleft9"  Part="1" 
+AR Path="/601B617C/600C04DB" Ref="Hbottomleft10"  Part="1" 
+AR Path="/601B6B91/600C04DB" Ref="Hbottomleft12"  Part="1" 
+AR Path="/601B714E/600C04DB" Ref="Hbottomleft13"  Part="1" 
+AR Path="/601B73ED/600C04DB" Ref="Hbottomleft14"  Part="1" 
+AR Path="/601B7703/600C04DB" Ref="Hbottomleft15"  Part="1" 
+AR Path="/601B7A66/600C04DB" Ref="Hbottomleft16"  Part="1" 
+F 0 "Hbottomleft1" H 3900 7346 50  0000 L CNN
+F 1 "MountingHole" H 3900 7255 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 3800 7300 50  0001 C CNN
+F 3 "~" H 3800 7300 50  0001 C CNN
+	1    3800 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole Hbottomright1
+U 1 1 600C2E75
+P 4550 7300
+AR Path="/60059F31/600C2E75" Ref="Hbottomright1"  Part="1" 
+AR Path="/601AD743/600C2E75" Ref="Hbottomright2"  Part="1" 
+AR Path="/601B6580/600C2E75" Ref="Hbottomright11"  Part="1" 
+AR Path="/601B4EED/600C2E75" Ref="Hbottomright3"  Part="1" 
+AR Path="/601B5265/600C2E75" Ref="Hbottomright4"  Part="1" 
+AR Path="/601B55BF/600C2E75" Ref="Hbottomright5"  Part="1" 
+AR Path="/601B5793/600C2E75" Ref="Hbottomright6"  Part="1" 
+AR Path="/601B59D7/600C2E75" Ref="Hbottomright7"  Part="1" 
+AR Path="/601B5B26/600C2E75" Ref="Hbottomright8"  Part="1" 
+AR Path="/601B5F54/600C2E75" Ref="Hbottomright9"  Part="1" 
+AR Path="/601B617C/600C2E75" Ref="Hbottomright10"  Part="1" 
+AR Path="/601B6B91/600C2E75" Ref="Hbottomright12"  Part="1" 
+AR Path="/601B714E/600C2E75" Ref="Hbottomright13"  Part="1" 
+AR Path="/601B73ED/600C2E75" Ref="Hbottomright14"  Part="1" 
+AR Path="/601B7703/600C2E75" Ref="Hbottomright15"  Part="1" 
+AR Path="/601B7A66/600C2E75" Ref="Hbottomright16"  Part="1" 
+F 0 "Hbottomright1" H 4650 7346 50  0000 L CNN
+F 1 "MountingHole" H 4650 7255 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 4550 7300 50  0001 C CNN
+F 3 "~" H 4550 7300 50  0001 C CNN
+	1    4550 7300
+	1    0    0    -1  
+$EndComp
+Text Notes 4850 4200 0    50   ~ 0
+Use a two stage MOSFET to invert signal.
+Text Notes 7200 1600 0    50   ~ 0
+Match footprint of RGB LED Strip
 $EndSCHEMATC

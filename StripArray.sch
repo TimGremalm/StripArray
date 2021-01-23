@@ -4,12 +4,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 17
-Title ""
-Date ""
-Rev ""
+Title "Strip Array"
+Date "2021-01-23"
+Rev "2021-01-23"
 Comp ""
-Comment1 ""
-Comment2 ""
+Comment1 "WS2811 LED driver with external MOSFET's for RGB."
+Comment2 "https://github.com/TimGremalm/StripArray"
 Comment3 ""
 Comment4 ""
 $EndDescr

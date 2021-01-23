@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 17
+Sheet 8 17
 Title "Strip Array - LED driver"
 Date "2021-01-23"
 Rev "2021-01-23"
@@ -34,7 +34,7 @@ AR Path="/601B714E/6006C523" Ref="Rdin13"  Part="1"
 AR Path="/601B73ED/6006C523" Ref="Rdin14"  Part="1" 
 AR Path="/601B7703/6006C523" Ref="Rdin15"  Part="1" 
 AR Path="/601B7A66/6006C523" Ref="Rdin16"  Part="1" 
-F 0 "Rdin1" V 2493 4300 50  0000 C CNN
+F 0 "Rdin7" V 2493 4300 50  0000 C CNN
 F 1 "33R" V 2584 4300 50  0000 C CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" V 2630 4300 50  0001 C CNN
 F 3 "~" H 2700 4300 50  0001 C CNN
@@ -62,7 +62,7 @@ AR Path="/601B714E/6006C537" Ref="Rredout13"  Part="1"
 AR Path="/601B73ED/6006C537" Ref="Rredout14"  Part="1" 
 AR Path="/601B7703/6006C537" Ref="Rredout15"  Part="1" 
 AR Path="/601B7A66/6006C537" Ref="Rredout16"  Part="1" 
-F 0 "Rredout1" H 4870 3346 50  0000 L CNN
+F 0 "Rredout7" H 4870 3346 50  0000 L CNN
 F 1 "10k" H 4870 3255 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" V 4730 3300 50  0001 C CNN
 F 3 "~" H 4800 3300 50  0001 C CNN
@@ -90,7 +90,7 @@ AR Path="/601B714E/6006C543" Ref="Rred13"  Part="1"
 AR Path="/601B73ED/6006C543" Ref="Rred14"  Part="1" 
 AR Path="/601B7703/6006C543" Ref="Rred15"  Part="1" 
 AR Path="/601B7A66/6006C543" Ref="Rred16"  Part="1" 
-F 0 "Rred1" V 3893 3800 50  0000 C CNN
+F 0 "Rred7" V 3893 3800 50  0000 C CNN
 F 1 "1k" V 3984 3800 50  0000 C CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" V 4030 3800 50  0001 C CNN
 F 3 "~" H 4100 3800 50  0001 C CNN
@@ -118,7 +118,7 @@ AR Path="/601B714E/6006C549" Ref="Rredinv13"  Part="1"
 AR Path="/601B73ED/6006C549" Ref="Rredinv14"  Part="1" 
 AR Path="/601B7703/6006C549" Ref="Rredinv15"  Part="1" 
 AR Path="/601B7A66/6006C549" Ref="Rredinv16"  Part="1" 
-F 0 "Rredinv1" H 4320 3346 50  0000 L CNN
+F 0 "Rredinv7" H 4320 3346 50  0000 L CNN
 F 1 "10k" H 4320 3255 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" V 4180 3300 50  0001 C CNN
 F 3 "~" H 4250 3300 50  0001 C CNN
@@ -146,7 +146,7 @@ AR Path="/601B714E/6006C553" Ref="Qredinv13"  Part="1"
 AR Path="/601B73ED/6006C553" Ref="Qredinv14"  Part="1" 
 AR Path="/601B7703/6006C553" Ref="Qredinv15"  Part="1" 
 AR Path="/601B7A66/6006C553" Ref="Qredinv16"  Part="1" 
-F 0 "Qredinv1" H 4904 3846 50  0000 L CNN
+F 0 "Qredinv7" H 4904 3846 50  0000 L CNN
 F 1 "IRLML6344" H 4904 3755 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 4900 3710 50  0001 L CIN
 F 3 "http://www.farnell.com/datasheets/1911844.pdf" H 4700 3800 50  0001 L CNN
@@ -187,7 +187,7 @@ AR Path="/601B714E/6006C573" Ref="Rvdd13"  Part="1"
 AR Path="/601B73ED/6006C573" Ref="Rvdd14"  Part="1" 
 AR Path="/601B7703/6006C573" Ref="Rvdd15"  Part="1" 
 AR Path="/601B7A66/6006C573" Ref="Rvdd16"  Part="1" 
-F 0 "Rvdd1" H 2420 2796 50  0000 L CNN
+F 0 "Rvdd7" H 2420 2796 50  0000 L CNN
 F 1 "8k2" H 2420 2705 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" V 2280 2750 50  0001 C CNN
 F 3 "~" H 2350 2750 50  0001 C CNN
@@ -215,7 +215,7 @@ AR Path="/601B714E/6006C579" Ref="C13"  Part="1"
 AR Path="/601B73ED/6006C579" Ref="C14"  Part="1" 
 AR Path="/601B7703/6006C579" Ref="C15"  Part="1" 
 AR Path="/601B7A66/6006C579" Ref="C16"  Part="1" 
-F 0 "C1" H 2465 3496 50  0000 L CNN
+F 0 "C7" H 2465 3496 50  0000 L CNN
 F 1 "100nF" H 2465 3405 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2388 3300 50  0001 C CNN
 F 3 "~" H 2350 3450 50  0001 C CNN
@@ -255,7 +255,7 @@ AR Path="/601B714E/6006C593" Ref="Qredout13"  Part="1"
 AR Path="/601B73ED/6006C593" Ref="Qredout14"  Part="1" 
 AR Path="/601B7703/6006C593" Ref="Qredout15"  Part="1" 
 AR Path="/601B7A66/6006C593" Ref="Qredout16"  Part="1" 
-F 0 "Qredout1" H 5454 3596 50  0000 L CNN
+F 0 "Qredout7" H 5454 3596 50  0000 L CNN
 F 1 "IRLML6344" H 5454 3505 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 5450 3460 50  0001 L CIN
 F 3 "http://www.farnell.com/datasheets/1911844.pdf" H 5250 3550 50  0001 L CNN
@@ -289,7 +289,7 @@ AR Path="/601B714E/6006C59C" Ref="Rgreenout13"  Part="1"
 AR Path="/601B73ED/6006C59C" Ref="Rgreenout14"  Part="1" 
 AR Path="/601B7703/6006C59C" Ref="Rgreenout15"  Part="1" 
 AR Path="/601B7A66/6006C59C" Ref="Rgreenout16"  Part="1" 
-F 0 "Rgreenout1" H 6970 3346 50  0000 L CNN
+F 0 "Rgreenout7" H 6970 3346 50  0000 L CNN
 F 1 "10k" H 6970 3255 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" V 6830 3300 50  0001 C CNN
 F 3 "~" H 6900 3300 50  0001 C CNN
@@ -317,7 +317,7 @@ AR Path="/601B714E/6006C5A8" Ref="Rgreen13"  Part="1"
 AR Path="/601B73ED/6006C5A8" Ref="Rgreen14"  Part="1" 
 AR Path="/601B7703/6006C5A8" Ref="Rgreen15"  Part="1" 
 AR Path="/601B7A66/6006C5A8" Ref="Rgreen16"  Part="1" 
-F 0 "Rgreen1" V 5993 3800 50  0000 C CNN
+F 0 "Rgreen7" V 5993 3800 50  0000 C CNN
 F 1 "1k" V 6084 3800 50  0000 C CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" V 6130 3800 50  0001 C CNN
 F 3 "~" H 6200 3800 50  0001 C CNN
@@ -345,7 +345,7 @@ AR Path="/601B714E/6006C5AE" Ref="Rgreeninv13"  Part="1"
 AR Path="/601B73ED/6006C5AE" Ref="Rgreeninv14"  Part="1" 
 AR Path="/601B7703/6006C5AE" Ref="Rgreeninv15"  Part="1" 
 AR Path="/601B7A66/6006C5AE" Ref="Rgreeninv16"  Part="1" 
-F 0 "Rgreeninv1" H 6420 3346 50  0000 L CNN
+F 0 "Rgreeninv7" H 6420 3346 50  0000 L CNN
 F 1 "10k" H 6420 3255 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" V 6280 3300 50  0001 C CNN
 F 3 "~" H 6350 3300 50  0001 C CNN
@@ -373,7 +373,7 @@ AR Path="/601B714E/6006C5B8" Ref="Qgreeninv13"  Part="1"
 AR Path="/601B73ED/6006C5B8" Ref="Qgreeninv14"  Part="1" 
 AR Path="/601B7703/6006C5B8" Ref="Qgreeninv15"  Part="1" 
 AR Path="/601B7A66/6006C5B8" Ref="Qgreeninv16"  Part="1" 
-F 0 "Qgreeninv1" H 7004 3846 50  0000 L CNN
+F 0 "Qgreeninv7" H 7004 3846 50  0000 L CNN
 F 1 "IRLML6344" H 7004 3755 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 7000 3710 50  0001 L CIN
 F 3 "http://www.farnell.com/datasheets/1911844.pdf" H 6800 3800 50  0001 L CNN
@@ -426,7 +426,7 @@ AR Path="/601B714E/6006C5D4" Ref="Qgreenout13"  Part="1"
 AR Path="/601B73ED/6006C5D4" Ref="Qgreenout14"  Part="1" 
 AR Path="/601B7703/6006C5D4" Ref="Qgreenout15"  Part="1" 
 AR Path="/601B7A66/6006C5D4" Ref="Qgreenout16"  Part="1" 
-F 0 "Qgreenout1" H 7554 3596 50  0000 L CNN
+F 0 "Qgreenout7" H 7554 3596 50  0000 L CNN
 F 1 "IRLML6344" H 7554 3505 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 7550 3460 50  0001 L CIN
 F 3 "http://www.farnell.com/datasheets/1911844.pdf" H 7350 3550 50  0001 L CNN
@@ -458,7 +458,7 @@ AR Path="/601B714E/6006C5DA" Ref="Rblueout13"  Part="1"
 AR Path="/601B73ED/6006C5DA" Ref="Rblueout14"  Part="1" 
 AR Path="/601B7703/6006C5DA" Ref="Rblueout15"  Part="1" 
 AR Path="/601B7A66/6006C5DA" Ref="Rblueout16"  Part="1" 
-F 0 "Rblueout1" H 9070 3346 50  0000 L CNN
+F 0 "Rblueout7" H 9070 3346 50  0000 L CNN
 F 1 "10k" H 9070 3255 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" V 8930 3300 50  0001 C CNN
 F 3 "~" H 9000 3300 50  0001 C CNN
@@ -486,7 +486,7 @@ AR Path="/601B714E/6006C5E6" Ref="Rblue13"  Part="1"
 AR Path="/601B73ED/6006C5E6" Ref="Rblue14"  Part="1" 
 AR Path="/601B7703/6006C5E6" Ref="Rblue15"  Part="1" 
 AR Path="/601B7A66/6006C5E6" Ref="Rblue16"  Part="1" 
-F 0 "Rblue1" V 8093 3800 50  0000 C CNN
+F 0 "Rblue7" V 8093 3800 50  0000 C CNN
 F 1 "1k" V 8184 3800 50  0000 C CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" V 8230 3800 50  0001 C CNN
 F 3 "~" H 8300 3800 50  0001 C CNN
@@ -514,7 +514,7 @@ AR Path="/601B714E/6006C5EC" Ref="Rblueinv13"  Part="1"
 AR Path="/601B73ED/6006C5EC" Ref="Rblueinv14"  Part="1" 
 AR Path="/601B7703/6006C5EC" Ref="Rblueinv15"  Part="1" 
 AR Path="/601B7A66/6006C5EC" Ref="Rblueinv16"  Part="1" 
-F 0 "Rblueinv1" H 8520 3346 50  0000 L CNN
+F 0 "Rblueinv7" H 8520 3346 50  0000 L CNN
 F 1 "10k" H 8520 3255 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" V 8380 3300 50  0001 C CNN
 F 3 "~" H 8450 3300 50  0001 C CNN
@@ -542,7 +542,7 @@ AR Path="/601B714E/6006C5F6" Ref="Qblueinv13"  Part="1"
 AR Path="/601B73ED/6006C5F6" Ref="Qblueinv14"  Part="1" 
 AR Path="/601B7703/6006C5F6" Ref="Qblueinv15"  Part="1" 
 AR Path="/601B7A66/6006C5F6" Ref="Qblueinv16"  Part="1" 
-F 0 "Qblueinv1" H 9104 3846 50  0000 L CNN
+F 0 "Qblueinv7" H 9104 3846 50  0000 L CNN
 F 1 "IRLML6344" H 9104 3755 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 9100 3710 50  0001 L CIN
 F 3 "http://www.farnell.com/datasheets/1911844.pdf" H 8900 3800 50  0001 L CNN
@@ -595,7 +595,7 @@ AR Path="/601B714E/6006C612" Ref="Qblueout13"  Part="1"
 AR Path="/601B73ED/6006C612" Ref="Qblueout14"  Part="1" 
 AR Path="/601B7703/6006C612" Ref="Qblueout15"  Part="1" 
 AR Path="/601B7A66/6006C612" Ref="Qblueout16"  Part="1" 
-F 0 "Qblueout1" H 9654 3596 50  0000 L CNN
+F 0 "Qblueout7" H 9654 3596 50  0000 L CNN
 F 1 "IRLML6344" H 9654 3505 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 9650 3460 50  0001 L CIN
 F 3 "http://www.farnell.com/datasheets/1911844.pdf" H 9450 3550 50  0001 L CNN
@@ -628,7 +628,7 @@ AR Path="/601B714E/6006C62D" Ref="LedStrip13"  Part="1"
 AR Path="/601B73ED/6006C62D" Ref="LedStrip14"  Part="1" 
 AR Path="/601B7703/6006C62D" Ref="LedStrip15"  Part="1" 
 AR Path="/601B7A66/6006C62D" Ref="LedStrip16"  Part="1" 
-F 0 "LedStrip1" V 7450 1600 50  0000 L CNN
+F 0 "LedStrip7" V 7450 1600 50  0000 L CNN
 F 1 "Conn_01x04" V 7450 1500 50  0001 L CNN
 F 2 "StripArray:RGB_Strip" H 7350 1800 50  0001 C CNN
 F 3 "~" H 7350 1800 50  0001 C CNN
@@ -656,7 +656,7 @@ AR Path="/601B714E/6006C642" Ref="Jout13"  Part="1"
 AR Path="/601B73ED/6006C642" Ref="Jout14"  Part="1" 
 AR Path="/601B7703/6006C642" Ref="Jout15"  Part="1" 
 AR Path="/601B7A66/6006C642" Ref="Jout16"  Part="1" 
-F 0 "Jout1" H 10050 4500 50  0000 L CNN
+F 0 "Jout7" H 10050 4500 50  0000 L CNN
 F 1 "Conn_01x03" H 10230 4651 50  0001 L CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 10150 4700 50  0001 C CNN
 F 3 "~" H 10150 4700 50  0001 C CNN
@@ -754,7 +754,7 @@ AR Path="/601B714E/6006C63C" Ref="Jin13"  Part="1"
 AR Path="/601B73ED/6006C63C" Ref="Jin14"  Part="1" 
 AR Path="/601B7703/6006C63C" Ref="Jin15"  Part="1" 
 AR Path="/601B7A66/6006C63C" Ref="Jin16"  Part="1" 
-F 0 "Jin1" H 1700 4500 50  0000 C CNN
+F 0 "Jin7" H 1700 4500 50  0000 C CNN
 F 1 "Conn_01x03" H 1618 4466 50  0001 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 1700 4700 50  0001 C CNN
 F 3 "~" H 1700 4700 50  0001 C CNN
@@ -872,7 +872,7 @@ AR Path="/601B714E/601B0CCE" Ref="#FLG011"  Part="1"
 AR Path="/601B73ED/601B0CCE" Ref="#FLG012"  Part="1" 
 AR Path="/601B7703/601B0CCE" Ref="#FLG013"  Part="1" 
 AR Path="/601B7A66/601B0CCE" Ref="#FLG014"  Part="1" 
-F 0 "#FLG0103" H 3450 3175 50  0001 C CNN
+F 0 "#FLG014" H 3450 3175 50  0001 C CNN
 F 1 "PWR_FLAG" H 3450 3273 50  0001 C CNN
 F 2 "" H 3450 3100 50  0001 C CNN
 F 3 "~" H 3450 3100 50  0001 C CNN
@@ -899,7 +899,7 @@ AR Path="/601B714E/600BA38D" Ref="Htopleft13"  Part="1"
 AR Path="/601B73ED/600BA38D" Ref="Htopleft14"  Part="1" 
 AR Path="/601B7703/600BA38D" Ref="Htopleft15"  Part="1" 
 AR Path="/601B7A66/600BA38D" Ref="Htopleft16"  Part="1" 
-F 0 "Htopleft1" H 3900 6946 50  0000 L CNN
+F 0 "Htopleft7" H 3900 6946 50  0000 L CNN
 F 1 "MountingHole" H 3900 6855 50  0000 L CNN
 F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 3800 6900 50  0001 C CNN
 F 3 "~" H 3800 6900 50  0001 C CNN
@@ -926,7 +926,7 @@ AR Path="/601B714E/600BDC42" Ref="Htopright13"  Part="1"
 AR Path="/601B73ED/600BDC42" Ref="Htopright14"  Part="1" 
 AR Path="/601B7703/600BDC42" Ref="Htopright15"  Part="1" 
 AR Path="/601B7A66/600BDC42" Ref="Htopright16"  Part="1" 
-F 0 "Htopright1" H 4650 6946 50  0000 L CNN
+F 0 "Htopright7" H 4650 6946 50  0000 L CNN
 F 1 "MountingHole" H 4650 6855 50  0000 L CNN
 F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 4550 6900 50  0001 C CNN
 F 3 "~" H 4550 6900 50  0001 C CNN
@@ -953,7 +953,7 @@ AR Path="/601B714E/600C04DB" Ref="Hbottomleft13"  Part="1"
 AR Path="/601B73ED/600C04DB" Ref="Hbottomleft14"  Part="1" 
 AR Path="/601B7703/600C04DB" Ref="Hbottomleft15"  Part="1" 
 AR Path="/601B7A66/600C04DB" Ref="Hbottomleft16"  Part="1" 
-F 0 "Hbottomleft1" H 3900 7346 50  0000 L CNN
+F 0 "Hbottomleft7" H 3900 7346 50  0000 L CNN
 F 1 "MountingHole" H 3900 7255 50  0000 L CNN
 F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 3800 7300 50  0001 C CNN
 F 3 "~" H 3800 7300 50  0001 C CNN
@@ -980,7 +980,7 @@ AR Path="/601B714E/600C2E75" Ref="Hbottomright13"  Part="1"
 AR Path="/601B73ED/600C2E75" Ref="Hbottomright14"  Part="1" 
 AR Path="/601B7703/600C2E75" Ref="Hbottomright15"  Part="1" 
 AR Path="/601B7A66/600C2E75" Ref="Hbottomright16"  Part="1" 
-F 0 "Hbottomright1" H 4650 7346 50  0000 L CNN
+F 0 "Hbottomright7" H 4650 7346 50  0000 L CNN
 F 1 "MountingHole" H 4650 7255 50  0000 L CNN
 F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 4550 7300 50  0001 C CNN
 F 3 "~" H 4550 7300 50  0001 C CNN
@@ -989,7 +989,7 @@ F 3 "~" H 4550 7300 50  0001 C CNN
 $EndComp
 Text Notes 4850 4200 0    50   ~ 0
 Use a two stage MOSFET to invert signal.
-Text Notes 7200 1600 0    50   ~ 0
+Text Notes 7650 1850 0    50   ~ 0
 Match footprint of RGB LED Strip
 Wire Wire Line
 	2500 4700 8850 4700
@@ -1017,7 +1017,7 @@ AR Path="/601B714E/6006C559" Ref="U13"  Part="1"
 AR Path="/601B73ED/6006C559" Ref="U14"  Part="1" 
 AR Path="/601B7703/6006C559" Ref="U15"  Part="1" 
 AR Path="/601B7A66/6006C559" Ref="U16"  Part="1" 
-F 0 "U1" H 3450 4850 50  0000 C CNN
+F 0 "U7" H 3450 4850 50  0000 C CNN
 F 1 "WS2811" H 3450 4750 50  0000 C CNN
 F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 3150 4550 50  0001 C CNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 3250 4650 50  0001 C CNN
@@ -1030,28 +1030,29 @@ Wire Wire Line
 	2950 3200 2950 3100
 Wire Wire Line
 	2950 3500 2950 4500
+Text Notes 2950 2950 0    50   ~ 0
+Set floating for high speed 800kHz mode.\nSet high for low speed mode 400kHz.
 $Comp
-L Device:R Rredinv?
-U 1 1 600E943A
+L Device:R Rset1
+U 1 1 60103A6A
 P 2950 3350
-AR Path="/600E943A" Ref="Rredinv?"  Part="1" 
-AR Path="/60059F31/600E943A" Ref="Rset?"  Part="1" 
-AR Path="/601AD743/600E943A" Ref="Rredinv?"  Part="1" 
-AR Path="/601B4EED/600E943A" Ref="Rredinv?"  Part="1" 
-AR Path="/601B5265/600E943A" Ref="Rredinv?"  Part="1" 
-AR Path="/601B55BF/600E943A" Ref="Rredinv?"  Part="1" 
-AR Path="/601B5793/600E943A" Ref="Rredinv?"  Part="1" 
-AR Path="/601B59D7/600E943A" Ref="Rredinv?"  Part="1" 
-AR Path="/601B5B26/600E943A" Ref="Rredinv?"  Part="1" 
-AR Path="/601B5F54/600E943A" Ref="Rredinv?"  Part="1" 
-AR Path="/601B617C/600E943A" Ref="Rredinv?"  Part="1" 
-AR Path="/601B6580/600E943A" Ref="Rredinv?"  Part="1" 
-AR Path="/601B6B91/600E943A" Ref="Rredinv?"  Part="1" 
-AR Path="/601B714E/600E943A" Ref="Rredinv?"  Part="1" 
-AR Path="/601B73ED/600E943A" Ref="Rredinv?"  Part="1" 
-AR Path="/601B7703/600E943A" Ref="Rredinv?"  Part="1" 
-AR Path="/601B7A66/600E943A" Ref="Rredinv?"  Part="1" 
-F 0 "Rset?" H 3020 3396 50  0000 L CNN
+AR Path="/60059F31/60103A6A" Ref="Rset1"  Part="1" 
+AR Path="/601B5793/60103A6A" Ref="Rset6"  Part="1" 
+AR Path="/601B7703/60103A6A" Ref="Rset15"  Part="1" 
+AR Path="/601AD743/60103A6A" Ref="Rset2"  Part="1" 
+AR Path="/601B4EED/60103A6A" Ref="Rset3"  Part="1" 
+AR Path="/601B5265/60103A6A" Ref="Rset4"  Part="1" 
+AR Path="/601B55BF/60103A6A" Ref="Rset5"  Part="1" 
+AR Path="/601B59D7/60103A6A" Ref="Rset7"  Part="1" 
+AR Path="/601B5B26/60103A6A" Ref="Rset8"  Part="1" 
+AR Path="/601B5F54/60103A6A" Ref="Rset9"  Part="1" 
+AR Path="/601B617C/60103A6A" Ref="Rset10"  Part="1" 
+AR Path="/601B6580/60103A6A" Ref="Rset11"  Part="1" 
+AR Path="/601B6B91/60103A6A" Ref="Rset12"  Part="1" 
+AR Path="/601B714E/60103A6A" Ref="Rset13"  Part="1" 
+AR Path="/601B73ED/60103A6A" Ref="Rset14"  Part="1" 
+AR Path="/601B7A66/60103A6A" Ref="Rset16"  Part="1" 
+F 0 "Rset7" H 3020 3396 50  0000 L CNN
 F 1 "0R" H 3020 3305 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" V 2880 3350 50  0001 C CNN
 F 3 "~" H 2950 3350 50  0001 C CNN
@@ -1059,6 +1060,43 @@ F 4 "DNP" H 2950 3350 50  0001 C CNN "DNP"
 	1    2950 3350
 	1    0    0    -1  
 $EndComp
-Text Notes 2950 2950 0    50   ~ 0
-Set floating for high speed 800kHz mode.\nSet high for low speed mode 400kHz.
+$Comp
+L Connector:Conn_01x04_Female Jrgb1
+U 1 1 601075B2
+P 7350 1300
+AR Path="/60059F31/601075B2" Ref="Jrgb1"  Part="1" 
+AR Path="/601AD743/601075B2" Ref="Jrgb2"  Part="1" 
+AR Path="/601B4EED/601075B2" Ref="Jrgb3"  Part="1" 
+AR Path="/601B5265/601075B2" Ref="Jrgb4"  Part="1" 
+AR Path="/601B55BF/601075B2" Ref="Jrgb5"  Part="1" 
+AR Path="/601B5793/601075B2" Ref="Jrgb6"  Part="1" 
+AR Path="/601B59D7/601075B2" Ref="Jrgb7"  Part="1" 
+AR Path="/601B5B26/601075B2" Ref="Jrgb8"  Part="1" 
+AR Path="/601B5F54/601075B2" Ref="Jrgb9"  Part="1" 
+AR Path="/601B617C/601075B2" Ref="Jrgb10"  Part="1" 
+AR Path="/601B6580/601075B2" Ref="Jrgb11"  Part="1" 
+AR Path="/601B6B91/601075B2" Ref="Jrgb12"  Part="1" 
+AR Path="/601B714E/601075B2" Ref="Jrgb13"  Part="1" 
+AR Path="/601B73ED/601075B2" Ref="Jrgb14"  Part="1" 
+AR Path="/601B7703/601075B2" Ref="Jrgb15"  Part="1" 
+AR Path="/601B7A66/601075B2" Ref="Jrgb16"  Part="1" 
+F 0 "Jrgb7" V 7288 1012 50  0000 R CNN
+F 1 "Conn_01x04_Female" V 7197 1012 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 7350 1300 50  0001 C CNN
+F 3 "~" H 7350 1300 50  0001 C CNN
+	1    7350 1300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7250 1500 7250 2000
+Connection ~ 7250 2000
+Wire Wire Line
+	7350 1500 7350 2000
+Connection ~ 7350 2000
+Wire Wire Line
+	7450 1500 7450 2000
+Connection ~ 7450 2000
+Wire Wire Line
+	7550 1500 7550 2000
+Connection ~ 7550 2000
 $EndSCHEMATC
